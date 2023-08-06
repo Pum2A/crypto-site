@@ -16,7 +16,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ApiServiceService {
-  private apiUrl = 'http://api.coinlayer.com/live';
+  private apiUrl = 'http://api.coinlayer.com/list';
   private apiKey = environment.apiKey;
 
 
@@ -30,7 +30,6 @@ export class ApiServiceService {
     const params = new HttpParams().set('access_key', this.apiKey);
     const urlWithParams = this.apiUrl + '?' + params.toString();
 
-    console.log('API URL with Params:', urlWithParams); // Wypisz adres URL z parametrami w konsoli
 
     return this.http.get<any>(urlWithParams).pipe(
       catchError(error => {
