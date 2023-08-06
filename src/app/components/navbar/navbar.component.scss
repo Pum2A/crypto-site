@@ -10,7 +10,14 @@ nav ul li a{
   letter-spacing: .2rem;
   text-decoration: none;
   padding: 1rem;
-  border: 2px solid #00FF99;
+  border-radius: 1rem;
+  border: 1px solid #fff;
   cursor: pointer;
+
+  &:hover{
+    border: 1px solid #34568B;
+    transition: 0.3s all;
+
+  }
 
 }
