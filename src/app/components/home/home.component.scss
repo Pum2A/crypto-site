@@ -5,20 +5,24 @@ main{
 
 .top5-crypto-container
 {
-  margin-top: 15rem;
-  height: 30rem;
+
   width: 100%;
-  display: flex;
-  background-color: #050404 ;
   justify-content: space-around;
   align-items: center;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
 }
 
+
+.content-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 2rem;
+}
 .content-container h3{
-  font-size: 5rem;
   color: #fff;
+  font-size: 3rem;
 }
 
 
@@ -28,9 +32,12 @@ main{
 
 ul{
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
   // padding: 2rem;
-  margin: 2rem;
+  // margin: 2rem;
   // background-color: red;
   gap: 5rem;
   // margin: 1rem;
@@ -40,10 +47,10 @@ ul li {
   cursor: pointer;
   min-width: 15rem;
   max-width: 15rem;
-  height: 25rem;
+  height: 33rem;
   background-color: #fff;
   color: #000;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   border-radius: 1rem;
   display: flex;
@@ -51,20 +58,46 @@ ul li {
   align-items: center;
   flex-direction: column;
   text-align: left;
-  padding: 1rem;
+  padding: 0rem 2rem;
   // gap: 1rem;
   &:hover{
     border: 3px solid #34568B ;
+  }
+
+  &:active{
+    border: 3px solid #34568B ;
+
   }
 }
 
 ul li img{
   border: 3px solid #000;
-  margin: 1rem;
+  border-radius: 50%;
   width: 10rem;
   height: 10rem;
-  border-radius: 50%;
-  background-size: cover;
+  margin: 2rem 2rem;
   background-position: center;
 
+}
+
+@media only screen and (min-width: 1024px){
+  .content-container h3{
+    color: #fff;
+    font-size:5rem;
+  }
+
+  ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #050404;
+    padding: 2rem;
+    width: 100%;
+    margin-top: 5rem;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+
+    gap: 5rem;
+  }
 }

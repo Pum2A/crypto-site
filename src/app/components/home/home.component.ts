@@ -5,7 +5,6 @@ import { ApiServiceService } from 'src/app/services/api-service.service';
  template: `
  <main>
 
-   <h2>Kursy kryptowalut</h2>
    <div class="top5-crypto-container">
      <div class="content-container">
        <h3>PRZYKŁADOWE KURSY KRYPTOWALUT</h3>

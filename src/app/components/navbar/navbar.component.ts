@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   <nav>
     <ul>
       <li><a>HOME</a></li>
-      <li><a>CRYPTO PRICES</a></li>
+      <li><a>PRICES</a></li>
       <li><a>RULES</a></li>
     </ul>
   </nav>`,

@@ -10,8 +10,8 @@
 }
 
 .logo-container span{
-  width: 5rem;
-  font-size: 4rem;
+  width: 3rem;
+    font-size: 2rem;
   color: #fff  ;
   text-shadow: 0px 0px 1px #fff, -1px 0px 2px #fff;
   font-weight: 600;
@@ -20,36 +20,42 @@
 
 }
 
+
 .h1-container{
-  margin-top: 7rem;
-  // width: 80%;
+  margin-top: 20rem;
   // background-color: red;
-  min-height: 45rem;
-  max-height: 45rem;
+  // min-height: 0rem;
+  // max-height: 25rem;
+
+    gap: 2rem;
 
   display: flex;
   flex-direction: column;
-  // align-items: center;
-  margin-left: 30rem;
-  // text-align: left;
+  align-items: center;
+  text-align: center;
   justify-content: center;
+
 
 }
 
 .h1-container h1{
-letter-spacing: .5rem;
-font-size: 10rem;
-min-height: 25rem;
-max-height: 25rem;
+  letter-spacing: .2rem;
+  font-size: 4rem;
+  text-align: center;
+  // min-height: 25rem;
+  // max-height: 25rem;
 
-}
+  }
 
-.h1-container h2{
-  font-size: 4.5rem;
-  min-height: 5rem;
-max-height: 5rem;
+  .h1-container h2{
+    letter-spacing: .2rem;
+  font-size: 3rem;
+  text-align: center;
 
-}
+  // margin-left: 2.5rem;
+
+  }
+
 
 header{
 height: 60rem;
@@ -65,3 +71,19 @@ background-color: #030202;
   justify-content: space-around;
   align-items: center;
 }
+
+
+@media only screen and (min-width: 750px){
+  .h1-container h1{
+    font-size: 7rem;
+
+
+    }
+  .h1-container h2{
+    font-size: 5rem;
+
+
+
+    }
+}
+
