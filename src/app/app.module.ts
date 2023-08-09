@@ -7,19 +7,22 @@ import { HomeComponent } from './components/home/home.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-
+import { NgImageSliderModule } from 'ng-image-slider';
+import { ImageSliderComponent } from './components/image-slider/image-slider.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TopbarComponent,
     NavbarComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ImageSliderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgImageSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
