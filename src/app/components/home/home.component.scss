@@ -1,5 +1,5 @@
 main{
-  height: 200rem;
+  height: 300vh;
   background-color: #030202 ;
 }
 
@@ -91,10 +91,15 @@ main{
 .h4-container h4{
   color: #fff;
   font-size: 4rem;
+  background-color: #050404;
+  padding: 3rem;
+  border-radius: 1rem;
+  border: 1px solid #fff;
 }
 
 ul{
-  min-height: 50vh;
+  min-height: 50rem;
+  max-height: 50rem;
   width: 70%;
   padding: 3rem;
   background-color: #050404;
@@ -103,11 +108,14 @@ ul{
   border-radius: 2rem;
   justify-content: center;
   flex-direction: column;
-  gap: .5rem;
+  gap: .7rem;
+  transition: 0.1s all;
   cursor: pointer;
 
   &:hover{
-    border: 1px solid #34568B;
+    border: 3px solid #34568B;
+    transition: 0.1s all;
+
   }
   // align-items: flex-start;
 
@@ -122,7 +130,6 @@ ul li{
   // text-align: left;
 
   // text-align: left;
-
   color: #fff;
   font-size: 1.6rem;
 }
@@ -168,6 +175,16 @@ ng-image-slider{
 
   section{
     flex-wrap: wrap;
+  }
+
+  main{
+    height: 630vh;
+
+  }
+
+  ul {
+    min-height: 80rem;
+  max-height: 80rem;
   }
 
 }

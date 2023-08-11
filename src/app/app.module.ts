@@ -9,6 +9,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { ImageSliderComponent } from './components/image-slider/image-slider.component';
+import { PricesComponent } from './components/prices/prices.component';
+import { RulesComponent } from './components/rules/rules.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +20,9 @@ import { ImageSliderComponent } from './components/image-slider/image-slider.com
     TopbarComponent,
     NavbarComponent,
     PageNotFoundComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    PricesComponent,
+    RulesComponent,
   ],
   imports: [
     BrowserModule,

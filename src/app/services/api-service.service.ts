@@ -17,6 +17,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ApiServiceService {
   private apiUrl = 'http://api.coinlayer.com/list';
+  private apiUrlSecond = 'http://api.coinlayer.com/live';
   private apiKey = environment.apiKey;
 
 
@@ -38,4 +39,23 @@ export class ApiServiceService {
       })
     );
   }
+
+
+  getDataLive(): Observable<any> {
+    const params = new HttpParams().set('access_key', this.apiKey);
+    const urlWithParams = this.apiUrlSecond + '?' + params.toString();
+
+    return this.http.get<any>(urlWithParams).pipe(
+      catchError(error => {
+        console.error('Wystąpił błąd podczas pobierania danych:', error);
+        return throwError('Coś poszło nie tak. Spróbuj ponownie później.');
+      })
+    );
+  }
+
+
+
+
+
+
 }
