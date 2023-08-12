@@ -25,14 +25,17 @@ ul{
 ul li {
   width: calc(25rem); /* 25% szerokości minus marginesy */
   margin-bottom: 2rem;
-  padding: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   border: 1px solid #ccc;
+  border-radius: 1rem;
   background-color: #040404;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   cursor: pointer;
   &:hover{
     border: 1px solid #34568B;
@@ -48,6 +51,63 @@ ul li img{
 }
 
 
-*{
-  color: #fff !important;
+
+
+.h3-container{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h3-container h3{
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.green-text {
+  color: lime !important;
+}
+
+.grey-text {
+  color: rgb(196, 196, 196) !important;
+}
+
+.search-container{
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.search-container input{
+  width: 30rem;
+  height: 5rem;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  background-color: #030202;
+  border: 1px solid #e4e3e3;
+  border-radius: 1rem;
+  cursor: pointer;
+  &:hover{
+    border: 1px solid #34568B;
+  }
+
+
+}
+.search-container input::placeholder{
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.7rem;
+  color: #fff;
+
+  font-weight: 700;
+  text-transform: uppercase;
+
+
+}
+
+.search-container input:focus::placeholder{
+color: transparent;
 }

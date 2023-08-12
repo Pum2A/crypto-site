@@ -10,7 +10,7 @@ import { ApiServiceService } from 'src/app/services/api-service.service';
 
    <div class="top5-crypto-container">
      <div class="content-container">
-       <h3>PRZYKŁADOWE KURSY KRYPTOWALUT</h3>
+       <h3>PRZYKŁADOWE KRYPTOWALUTY</h3>
       </div>
       <div class="slider-container">
 

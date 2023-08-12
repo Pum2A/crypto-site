@@ -54,6 +54,22 @@ export class ApiServiceService {
   }
 
 
+  searchCrypto(searchTerm: string): Observable<any> {
+    const params = new HttpParams()
+      .set('access_key', this.apiKey)
+      .set('search', searchTerm); // Dodajmy parametr do zapytania
+
+    const urlWithParams = this.apiUrl + '?' + params.toString();
+
+    return this.http.get<any>(urlWithParams).pipe(
+      catchError(error => {
+        console.error('An error occurred while fetching data:', error);
+        return throwError('Something went wrong. Please try again later.');
+      })
+    );
+  }
+
+
 
 
 
