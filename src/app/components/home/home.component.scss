@@ -93,15 +93,17 @@ main{
   font-size: 4rem;
   background-color: #050404;
   padding: 3rem;
+  text-align: center;
+  align-items: center;
   border-radius: 1rem;
   border: 1px solid #fff;
 }
 
 ul{
   min-height: 50rem;
-  max-height: 50rem;
+  // max-height: 50rem;
   width: 70%;
-  padding: 3rem;
+  padding: 5rem;
   background-color: #050404;
   display: flex;
   border: 1px solid #fff;
@@ -113,7 +115,7 @@ ul{
   cursor: pointer;
 
   &:hover{
-    border: 3px solid #34568B;
+    border: 1px solid #34568B;
     transition: 0.1s all;
 
   }
@@ -178,13 +180,19 @@ ng-image-slider{
   }
 
   main{
-    height: 630vh;
+    min-height: 650vh;
 
   }
 
   ul {
-    min-height: 80rem;
-  max-height: 80rem;
+    // height: auto;
+    // padding: 5rem;
+  //   min-height: 85rem;
+  // max-height: 85rem;
+  }
+  ul li{
+        line-height: 2.7rem;
+
   }
 
 }
