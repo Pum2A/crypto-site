@@ -1,14 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable, catchError, tap, throwError } from 'rxjs';
-import { environment } from 'src/environments/environment';
 
 
-// interface Environment {
-//   production: boolean;
-//   apiKey: string;
-//   // inne zmienne środowiskowe...
-// }
+
 
 
 
@@ -16,10 +11,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ApiServiceService {
-  private apiUrl = 'http://api.coinlayer.com/list';
-  private apiUrlSecond = 'http://api.coinlayer.com/live';
-  private apiKey = environment.apiKey;
-
+  private apiUrl = 'https://data.binance.com/api/v3/ticker/24hr';
 
 
 
@@ -27,36 +19,23 @@ export class ApiServiceService {
   constructor(private http: HttpClient) { }
 
 
-  getData(): Observable<any> {
-    const params = new HttpParams().set('access_key', this.apiKey);
-    const urlWithParams = this.apiUrl + '?' + params.toString();
+  getData() {
 
 
-    return this.http.get<any>(urlWithParams).pipe(
-      catchError(error => {
-        console.error('Wystąpił błąd podczas pobierania danych:', error);
-        return throwError('Coś poszło nie tak. Spróbuj ponownie później.');
-      })
-    );
+    return this.http.get(this.apiUrl)
   }
 
 
-  getDataLive(): Observable<any> {
-    const params = new HttpParams().set('access_key', this.apiKey);
-    const urlWithParams = this.apiUrlSecond + '?' + params.toString();
+  getDataLive() {
 
-    return this.http.get<any>(urlWithParams).pipe(
-      catchError(error => {
-        console.error('Wystąpił błąd podczas pobierania danych:', error);
-        return throwError('Coś poszło nie tak. Spróbuj ponownie później.');
-      })
-    );
+
+    return this.http.get(this.apiUrl)
+
   }
 
 
   searchCrypto(searchTerm: string): Observable<any> {
     const params = new HttpParams()
-      .set('access_key', this.apiKey)
       .set('search', searchTerm); // Dodajmy parametr do zapytania
 
     const urlWithParams = this.apiUrl + '?' + params.toString();
