@@ -1,6 +1,6 @@
 .rules-main-background-container{
   background-color: #030202;
-  height: 320vh;
+  height: 360vh;
 }
 
 .content-container{
@@ -82,8 +82,20 @@ ul h3{
   }
 
   .rules-main-background-container{
-    min-height: 700vh;
+    min-height: 950vh;
 
+  }
+  ul h3{
+    font-weight: 800;
+    font-size: 3rem;
+    color: #fff;
+  }
+  .h3-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
 

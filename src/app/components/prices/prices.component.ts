@@ -19,7 +19,14 @@ import { DatePipe } from '@angular/common';
 </div>
 <ul>
 <li *ngFor="let crypto of cryptos | search: searchText">
-    {{ crypto.symbol }}: {{ crypto.lastPrice }} $
+  <span>
+
+    {{ crypto.symbol }}
+    </span>
+  <div class="green">
+
+    : {{ crypto.lastPrice }} $
+  </div>
   </li>
 
 </ul>

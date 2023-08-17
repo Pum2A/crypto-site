@@ -1,5 +1,5 @@
 main{
-  height: 300vh;
+  height: 400vh;
   background-color: #030202 ;
 }
 
@@ -134,6 +134,7 @@ ul li{
   // text-align: left;
   color: #fff;
   font-size: 1.6rem;
+  text-align: center;
 }
 
 
@@ -157,13 +158,24 @@ ul li img{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  max-width: 100%;
+  min-width: 100%;
+  gap: 10rem;
 }
 
 .slider-container li{
   display: flex;
+  flex-direction: column;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1rem;
+  width: 10%;
+  text-align: left;
+  // width: 30%;
+}
+
+.slider-container li span{
+  color: yellow;
+  font-weight: 600;
 }
 
 
@@ -177,7 +189,7 @@ ul li img{
 @media only screen and (max-width: 1024px){
   .content-container h3{
     color: #fff;
-    font-size:5rem;
+    font-size:3rem;
   }
 
   section{
@@ -185,7 +197,7 @@ ul li img{
   }
 
   main{
-    min-height: 650vh;
+    min-height: 950vh;
 
   }
 

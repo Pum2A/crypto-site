@@ -17,7 +17,11 @@ import { Component } from '@angular/core';
         </div>
       </div>
       <div class="h1-container">
-        <h1>CRYPTO CZYLI POTĘGA KRYPTOWALUT</h1>
+        <h1>CRYPTO CZYLI POTĘGA <strong>
+
+          KRYPTOWALUT
+        </strong>
+        </h1>
         <h2>WITAJ NA NASZEJ STRONIE!</h2>
       </div>
   </header>

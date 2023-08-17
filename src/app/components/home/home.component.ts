@@ -11,10 +11,12 @@ import { ApiServiceService } from 'src/app/services/api-service.service';
 
         <div class="slider-container">
           <li *ngFor="let crypto of cryptos.splice(0, limit)">
-            {{ crypto.symbol }}
-            {{ crypto.priceChange }}
-            {{ crypto.priceChangePercent }}
-            {{ crypto.weightedAvgPrice }}
+            <span>
+              {{ crypto.symbol }}
+</span>
+            Price Change:{{ crypto.priceChange }}
+            Price Change Percent:{{ crypto.priceChangePercent }}
+            Weighted Average Price:{{ crypto.weightedAvgPrice }}
           </li>
         </div>
       </div>
@@ -95,18 +97,7 @@ import { ApiServiceService } from 'src/app/services/api-service.service';
         </div>
       </section>
       <section id="second-main-content">
-        <div class="content2">
-          <div class="h4-container">
-            <h4>RANKING KRYPTOWALUT</h4>
-          </div>
-          <ul>
-          <li *ngFor="let crypto of cryptos.splice(0, limit)">
-            {{crypto.symbol}}
-            {{ crypto.highPrice }}
 
-          </li>
-          </ul>
-        </div>
         <div class="content">
           <div class="h4-container">
             <h4>FAQ</h4>
@@ -160,8 +151,8 @@ export class HomeComponent {
   currencies: any[] = [];
   cryptoData: any[] = [];
   fiatData: any[] = [];
-  min = 5;
-  max = 15;
+  min = 1;
+  max = 3;
 
   limit = Math.floor(Math.random() * (this.max - this.min) + this.min)
   cryptos: any;
