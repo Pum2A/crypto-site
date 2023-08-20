@@ -1,5 +1,7 @@
+@import '../../../styles.scss';
+
 .rules-main-background-container{
-  background-color: #030202;
+  background-color: $main-color;
   height: 360vh;
 }
 

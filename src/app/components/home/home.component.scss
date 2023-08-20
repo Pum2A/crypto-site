@@ -1,6 +1,8 @@
+@import '../../../styles.scss';
+
 main{
   height: 400vh;
-  background-color: #030202 ;
+  background-color: $main-color ;
 }
 
 .top5-crypto-container
@@ -18,10 +20,12 @@ main{
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem 2rem;
+  padding: 4rem 2rem;
 }
 .content-container h3{
-  background-color: #050404;
+  background-color: $second-main-color-contrast;
+  box-shadow: 0px 0px 6px #fff;
+  border: 1px solid #fff;
   padding: 3rem;
   border-radius: 1rem;
   color: #fff;
@@ -91,21 +95,22 @@ main{
 .h4-container h4{
   color: #fff;
   font-size: 4rem;
-  background-color: #050404;
+  background-color: $second-main-color-contrast;
   padding: 3rem;
   text-align: center;
   align-items: center;
   border-radius: 1rem;
-  border: 1px solid #fff;
-}
+  box-shadow: 0px 0px 6px #fff;
+  border: 1px solid #fff;}
 
 ul{
   min-height: 50rem;
   // max-height: 50rem;
   width: 70%;
   padding: 5rem;
-  background-color: #050404;
+  background-color: $second-main-color-contrast;
   display: flex;
+  box-shadow: 0px 0px 6px #fff;
   border: 1px solid #fff;
   border-radius: 2rem;
   justify-content: center;
@@ -115,7 +120,9 @@ ul{
   cursor: pointer;
 
   &:hover{
-    border: 1px solid #34568B;
+    border: 1px solid $main-yellow-color;
+    box-shadow: 0px 0px 6px $main-yellow-color;
+
     transition: 0.1s all;
 
   }
@@ -151,9 +158,10 @@ ul li img{
 
 
 .slider-container{
-  background-color: #050404;
+  background-color: $main-color;
+box-shadow: 0px 0px 6px #fff;
   border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+   border-bottom: 1px solid #fff;
   padding: 3rem;
   display: flex;
   justify-content: center;
@@ -165,25 +173,23 @@ ul li img{
 
 .slider-container li{
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   color: #fff;
-  font-size: 1rem;
-  width: 10%;
-  text-align: left;
+  font-size: 1.5rem;
+  width: 50%;
+  text-align: center;
   // width: 30%;
 }
 
 .slider-container li span{
-  color: yellow;
+  color: $main-yellow-color;
   font-weight: 600;
 }
 
 
 
-.slider-image:hover {
-  border: 2px solid red; /* Przykładowy efekt - czerwona ramka */
-  cursor: pointer; /* Dodanie efektu kursora po najechaniu */
-}
 
 
 @media only screen and (max-width: 1024px){

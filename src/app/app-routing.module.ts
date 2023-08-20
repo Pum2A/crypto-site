@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { PricesComponent } from './components/prices/prices.component';
 import { RulesComponent } from './components/rules/rules.component';
+import { PricesDetailsComponent } from './components/prices-details/prices-details.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 
@@ -16,6 +17,11 @@ const routes: Routes = [
   },
   {
     path:'rules', component: RulesComponent
+  },
+
+  {
+    path:'prices/:symbol', component: PricesDetailsComponent,
+
   },
   { path: '**', component: PageNotFoundComponent },
 

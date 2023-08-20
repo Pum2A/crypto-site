@@ -18,7 +18,7 @@ import { DatePipe } from '@angular/common';
         <input type="text" placeholder="Wyszukaj kryptowalutę" [(ngModel)]="searchText" (input)="getDataLive()">
 </div>
 <ul>
-<li *ngFor="let crypto of cryptos | search: searchText">
+<li [routerLink]="['/prices', crypto.symbol]" *ngFor="let crypto of cryptos | search: searchText">
   <span>
 
     {{ crypto.symbol }}

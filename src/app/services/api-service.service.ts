@@ -13,6 +13,8 @@ import { Observable, catchError, tap, throwError } from 'rxjs';
 export class ApiServiceService {
   private apiUrl = 'https://data.binance.com/api/v3/ticker/24hr';
 
+  private apiUrlId = 'https://data.binance.com/api/v3/ticker/price?symbol='
+
 
 
 
@@ -24,12 +26,17 @@ export class ApiServiceService {
 
     return this.http.get(this.apiUrl)
   }
-
-
   getDataLive() {
 
 
     return this.http.get(this.apiUrl)
+  }
+
+
+  getDataSingleCrypto(symbol:string) {
+
+
+    return this.http.get(`https://data.binance.com/api/v3/ticker/price?symbol=${symbol}`);
 
   }
 

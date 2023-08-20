@@ -1,0 +1,47 @@
+@import '../../../styles.scss';
+
+
+.background{
+  height: 400vh;
+  background-color: $main-color ;
+}
+
+.price-details-container{
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+p{
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.orange{
+  color: $main-yellow-color;
+}
+.green{
+  color: lime;
+}
+button{
+  margin: 3rem 3rem;
+  width: 30rem;
+  height:5rem;
+  background-color: $main-color;
+  border-radius: 1rem;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 4px #fff;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+
+}

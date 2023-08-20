@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 nav ul{
   display: flex;
   padding: 2.5rem;
@@ -11,14 +13,26 @@ nav ul li a{
   text-decoration: none;
   padding: 1rem;
   border-radius: 1rem;
+
   border: 1px solid #fff;
   cursor: pointer;
-
+  // background-color: $second-main-color-contrast;
   &:hover{
-    border: 1px solid #34568B;
-    transition: 0.3s all;
+    border: 1px solid $main-yellow-color;
+    box-shadow: 0px 0px 6px $main-yellow-color;
+
 
   }
+
+
+
+}
+
+.active {
+
+  border: 1px solid $main-yellow-color !important;
+  box-shadow: 0px 0px 6px $main-yellow-color;
+
 
 }
 

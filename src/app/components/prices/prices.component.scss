@@ -1,5 +1,7 @@
+@import '../../../styles.scss';
+
 .prices-main-background-container{
-  background-color: #030202;
+  background-color:  $main-color;
   height: 700vh;
 }
 
@@ -23,7 +25,9 @@ li {
 }
 
 li span{
-  color: yellow;
+  color: $main-yellow-color;
+  font-weight: 600;
+  letter-spacing: .1rem;
 }
 
 ul li {
@@ -70,7 +74,7 @@ ul li img{
 }
 
 .green-text {
-  color: lime !important;
+  color: $main-yellow-color !important;
 }
 
 .grey-text {
@@ -117,13 +121,16 @@ color: transparent;
 }
 
 .green{
-  color: green;
+  color: lime;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: .2rem;
+
 }
 
 @media only screen and (max-width: 1024px){
 
   .prices-main-background-container{
-    background-color: #030202;
     height: 4000vh;
   }
 

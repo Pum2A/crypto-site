@@ -5,9 +5,9 @@ import { Component } from '@angular/core';
   template:`
   <nav>
     <ul>
-      <li routerLink="/home"><a>HOME</a></li>
-      <li routerLink="/prices"><a>PRICES</a></li>
-      <li routerLink="/rules"><a>RULES</a></li>
+      <li routerLink="/home"><a [routerLinkActive]="'active'" >HOME</a></li>
+      <li routerLink="/prices"><a [routerLinkActive]="'active'">PRICES</a></li>
+      <li routerLink="/rules"><a [routerLinkActive]="'active'">RULES</a></li>
     </ul>
   </nav>`,
   styleUrls: ['./navbar.component.scss']

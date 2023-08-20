@@ -13,10 +13,10 @@ import { ApiServiceService } from 'src/app/services/api-service.service';
           <li *ngFor="let crypto of cryptos.splice(0, limit)">
             <span>
               {{ crypto.symbol }}
-</span>
-            Price Change:{{ crypto.priceChange }}
-            Price Change Percent:{{ crypto.priceChangePercent }}
-            Weighted Average Price:{{ crypto.weightedAvgPrice }}
+            </span>
+            Price Change: {{ crypto.priceChange }}
+            Price Change Percent: {{crypto.priceChangePercent}}
+            Weighted Average Price: {{ crypto.weightedAvgPrice }}
           </li>
         </div>
       </div>
@@ -97,7 +97,6 @@ import { ApiServiceService } from 'src/app/services/api-service.service';
         </div>
       </section>
       <section id="second-main-content">
-
         <div class="content">
           <div class="h4-container">
             <h4>FAQ</h4>
@@ -154,24 +153,20 @@ export class HomeComponent {
   min = 1;
   max = 3;
 
-  limit = Math.floor(Math.random() * (this.max - this.min) + this.min)
+  limit = Math.floor(Math.random() * (this.max - this.min) + this.min);
   cryptos: any;
-
 
   constructor(private apiService: ApiServiceService) {}
 
   ngOnInit() {
     this.getData();
-    console.log(this.limit)
+    console.log(this.limit);
   }
 
   getData(): void {
     this.apiService.getData().subscribe((response) => {
       this.cryptos = response;
-      console.log(response)
+      console.log(response);
     });
   }
-
-
-
 }

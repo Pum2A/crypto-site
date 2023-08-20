@@ -16,6 +16,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { DatePipe } from '@angular/common';
 import { SearchPipe } from './pipes/search.pipe';
+import { PricesDetailsComponent } from './components/prices-details/prices-details.component';
 
 
 
@@ -29,6 +30,7 @@ import { SearchPipe } from './pipes/search.pipe';
     PricesComponent,
     RulesComponent,
     SearchPipe,
+    PricesDetailsComponent,
   ],
   imports: [
     BrowserModule,
