@@ -1,27 +1,29 @@
-# CryptoSite
+Strona CRYPTO-SITE jest stroną na której możemy zobaczyć najważniejsze informacje ze świata kryptowalut. 
+Mamy możliwość wyszukania danej kryptowaluty i sprawdzenia aktulanej ceny jaka jest danego dnia.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
 
-## Development server
+STRONA GŁÓWNA
+![strona1](https://github.com/Pum2A/crypto-site/assets/95776599/d5439255-ba9f-4523-a517-dff54160ae94)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+PRZYKŁADOWE KRPYTOWALUTY (LOSOWANA JEST ILOSC OD 1 DO 3)
+![strona2](https://github.com/Pum2A/crypto-site/assets/95776599/23ca11fd-c704-4f03-9e1a-9b05ef8086eb)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+SEKCJA CENY POSZCZEGÓLNYCH KRYPTOWALUT
+![strona4](https://github.com/Pum2A/crypto-site/assets/95776599/5fb43335-65f0-4d48-b92e-3af70a6832da)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+PRZYKŁADOWE POKAZANIE WYSZUKANIA DOWOLNEJ KRYPTOWALUTY
+![strona5](https://github.com/Pum2A/crypto-site/assets/95776599/8d7cc809-19d6-4535-844a-9d2e96841688)
 
-## Running unit tests
+SZCZEGÓLY DANEJ KRYPTOWALUTY
+![strona6](https://github.com/Pum2A/crypto-site/assets/95776599/1a7684aa-6570-4370-aba9-5e8795d51886)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+SEKCJA ZASADY
+![strona7](https://github.com/Pum2A/crypto-site/assets/95776599/24c4487a-626c-421a-a821-0652e18edb15)
 
-## Running end-to-end tests
+Zamysł całej aplikacji był trochę bardziej zaawansowany, lecz api z którego korzystałem ma wiele niedociągnięć przez co nie mogłem zaprezentować niektórych funkcji które miałem zamiar pokazać.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
