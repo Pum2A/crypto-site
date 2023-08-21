@@ -63,7 +63,9 @@ ul li {
   font-size: 1.7rem;
   cursor: pointer;
   &:hover{
-    border: 1px solid #34568B;
+    border: 1px solid $main-yellow-color;
+    box-shadow: 0px 0px 6px $main-yellow-color;
+
   }
 
 }

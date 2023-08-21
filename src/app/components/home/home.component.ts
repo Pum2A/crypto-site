@@ -10,14 +10,26 @@ import { ApiServiceService } from 'src/app/services/api-service.service';
         </div>
 
         <div class="slider-container">
-          <li *ngFor="let crypto of cryptos.splice(0, limit)">
-            <span>
-              {{ crypto.symbol }}
-            </span>
-            Price Change: {{ crypto.priceChange }}
-            Price Change Percent: {{crypto.priceChangePercent}}
-            Weighted Average Price: {{ crypto.weightedAvgPrice }}
-          </li>
+          <ul *ngFor="let crypto of cryptos.splice(0, limit)">
+            <li>
+
+              <span>
+                {{ crypto.symbol }}
+              </span>
+            </li>
+            <li>
+
+              Price Change: {{ crypto.priceChange }}
+            </li>
+            <li>
+
+              Price Change Percent: {{crypto.priceChangePercent}}
+            </li>
+            <li>
+
+              Weighted Average Price: {{ crypto.weightedAvgPrice }}
+            </li>
+</ul>
         </div>
       </div>
       <section id="main-content">
@@ -25,7 +37,7 @@ import { ApiServiceService } from 'src/app/services/api-service.service';
           <div class="h4-container">
             <h4>O NAS</h4>
           </div>
-          <ul>
+          <ul class="main-content-text">
             <li>
               <strong
                 >Witaj na Crypto-Site! Jesteśmy pasjonatami i entuzjastami
@@ -55,7 +67,7 @@ import { ApiServiceService } from 'src/app/services/api-service.service';
           <div class="h4-container">
             <h4>NAJNOWSZE INFORMACJE KRYPTO</h4>
           </div>
-          <ul>
+          <ul class="main-content-text">
             <li><strong>1. "Bitcoin Znowu Pobił Rekord Cenowy"</strong></li>
             <li>
               Bitcoin osiągnął nowy rekord cenowy, przekraczając wartość 70 000
@@ -101,7 +113,7 @@ import { ApiServiceService } from 'src/app/services/api-service.service';
           <div class="h4-container">
             <h4>FAQ</h4>
           </div>
-          <ul>
+          <ul class="main-content-text">
             <li><strong>1. "Bitcoin Znowu Pobił Rekord Cenowy"</strong></li>
             <li>
               Bitcoin osiągnął nowy rekord cenowy, przekraczając wartość 70 000
@@ -160,13 +172,11 @@ export class HomeComponent {
 
   ngOnInit() {
     this.getData();
-    console.log(this.limit);
   }
 
   getData(): void {
     this.apiService.getData().subscribe((response) => {
       this.cryptos = response;
-      console.log(response);
     });
   }
 }
