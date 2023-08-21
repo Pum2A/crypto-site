@@ -1,3 +1,5 @@
+https://crypto-sites.netlify.app/
+
 Strona CRYPTO-SITE jest stroną na której możemy zobaczyć najważniejsze informacje ze świata kryptowalut. 
 Mamy możliwość wyszukania danej kryptowaluty i sprawdzenia aktulanej ceny jaka jest danego dnia.
 
